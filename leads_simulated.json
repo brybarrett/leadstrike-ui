@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Scarlett Johansson",
+    "title": "Director of Espionage",
+    "company": "Widow Ops LLC",
+    "industry": "Black-Ops Intelligence",
+    "location": "Budapest",
+    "email": "scarlett.johansson@hollymail.io",
+    "confidence": 0.95,
+    "domain": "hollymail.io",
+    "type": "hot"
+  },
+  {
+    "name": "Keanu Reeves",
+    "title": "Lead Agent, Bullet Avoidance",
+    "company": "Zion Defense Corp",
+    "industry": "Cybersecurity",
+    "location": "Matrix District",
+    "email": "keanu.reeves@movieverse.org",
+    "confidence": 0.97,
+    "domain": "movieverse.org",
+    "type": "warm"
+  },
+  {
+    "name": "Clint Eastwood",
+    "title": "VP of Revolver Retention",
+    "company": "High Noon Holdings",
+    "industry": "Security",
+    "location": "Tombstone, AZ",
+    "email": "clint.eastwood@galaxycorp.net",
+    "confidence": 0.93,
+    "domain": "galaxycorp.net",
+    "type": "cold"
+  },
+  {
+    "name": "Gal Gadot",
+    "title": "Shield Program Manager",
+    "company": "Amazonian Defense Co.",
+    "industry": "Military Contracts",
+    "location": "Themyscira",
+    "email": "gal.gadot@movieverse.org",
+    "confidence": 0.92,
+    "domain": "movieverse.org",
+    "type": "hot"
+  },
+  {
+    "name": "Ryan Reynolds",
+    "title": "Sarcasm Optimization Engineer",
+    "company": "Deadpool Industries",
+    "industry": "Brand Strategy",
+    "location": "Canada",
+    "email": "ryan.reynolds@galaxycorp.net",
+    "confidence": 0.89,
+    "domain": "galaxycorp.net",
+    "type": "warm"
+  },
+  {
+    "name": "Sigourney Weaver",
+    "title": "VP of Xenomorph Control",
+    "company": "Weyland-Yutani",
+    "industry": "Biohazard Management",
+    "location": "LV-426 Colony",
+    "email": "sigourney.weaver@example.com",
+    "confidence": 0.91,
+    "domain": "example.com",
+    "type": "cold"
+  },
+  {
+    "name": "Harrison Ford",
+    "title": "Director of Smuggling Ops",
+    "company": "Millennium Falcon Inc.",
+    "industry": "Intergalactic Trade",
+    "location": "Corellia, Outer Rim Territories",
+    "email": "harrison.ford@movieverse.org",
+    "confidence": 0.96,
+    "domain": "movieverse.org",
+    "type": "hot"
+  },
+  {
+    "name": "Samuel L. Jackson",
+    "title": "Snakes-on-a-Plane Consultant",
+    "company": "Airline Safety Group",
+    "industry": "Transport Risk",
+    "location": "Atlanta, GA",
+    "email": "samuel.l.jackson@galaxycorp.net",
+    "confidence": 0.94,
+    "domain": "galaxycorp.net",
+    "type": "warm"
+  },
+  {
+    "name": "Tom Cruise",
+    "title": "Flight Risk Officer",
+    "company": "Top Gun Academy",
+    "industry": "Aviation Strategy",
+    "location": "Miramar, CA",
+    "email": "tom.cruise@hollymail.io",
+    "confidence": 0.9,
+    "domain": "hollymail.io",
+    "type": "cold"
+  },
+  {
+    "name": "Chris Evans",
+    "title": "Freedom Coordinator",
+    "company": "Stars & Stripes Co.",
+    "industry": "Public Relations",
+    "location": "Brooklyn, NY",
+    "email": "chris.evans@movieverse.org",
+    "confidence": 0.88,
+    "domain": "movieverse.org",
+    "type": "warm"
+  }
+]
