@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Dropdowns from './Dropdowns';
 import logo from './assets/leadstrike-logo.png';
+import leadsSim from './leads_simulated.json';
 
 export default function Dashboard() {
   const [filters, setFilters] = useState({
@@ -33,16 +34,9 @@ export default function Dashboard() {
     ]);
   };
 
-  const handleSimLoad = async () => {
-    try {
-      const response = await fetch('https://leadstrike-api.onrender.com/simulated-leads');
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json();
-      console.log('🎭 Simulated leads loaded:', data);
-      setLeads(data);
-    } catch (err) {
-      console.error('⚠️ Simulated leads fetch failed:', err);
-    }
+  const handleSimLoad = () => {
+    console.log('🎭 Simulated leads loaded:', leadsSim);
+    setLeads(leadsSim);
   };
 
   return (
