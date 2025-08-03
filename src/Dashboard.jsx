@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Dropdowns from './Dropdowns';
+import logo from './assets/leadstrike-logo.png';
 
 export default function Dashboard() {
   const [filters, setFilters] = useState({
@@ -19,7 +20,7 @@ export default function Dashboard() {
         company: 'QuantumSoft',
         industry: 'Technology',
         location: 'San Francisco, CA',
-        email: 's.blake@quantumsoft.com'
+        email: 's.blake@quantumsoft.com',
       },
       {
         name: 'Marcus Nguyen',
@@ -27,7 +28,7 @@ export default function Dashboard() {
         company: 'FinEdge Inc.',
         industry: 'Finance',
         location: 'Austin, TX',
-        email: 'marcus@finedge.io'
+        email: 'marcus@finedge.io',
       },
     ]);
   };
@@ -47,17 +48,17 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white px-6 py-10">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-8 mb-12">
-          <div className="p-2 rounded-3xl bg-gradient-to-br from-[#0f172a] via-slate-800 to-[#1e293b] ring-1 ring-slate-700 shadow-lg">
+        <div className="flex items-center gap-10 mb-12">
+          <div className="flex-shrink-0 p-2 rounded-3xl bg-gradient-to-br from-[#0f172a] via-slate-800 to-[#1e293b] ring-1 ring-slate-700 shadow-lg">
             <img
-              src="/logo.png"
+              src={logo}
               alt="LeadStrike Logo"
-              className="h-44 w-44 object-contain rounded-2xl"
+              className="h-32 w-32 object-cover rounded-2xl"
             />
           </div>
           <h1 className="text-5xl font-extrabold leading-tight">
-            Get 5 leads.<br />
-            Geo-targeted.<br />
+            Get 5 leads. <br />
+            Geo-targeted. <br />
             SIC-matched.
           </h1>
         </div>
@@ -89,10 +90,14 @@ export default function Dashboard() {
             >
               <h2 className="text-lg font-semibold">{lead.name}</h2>
               <p className="text-sm">
-                <strong>Title:</strong> {lead.title}<br />
-                <strong>Company:</strong> {lead.company}<br />
-                <strong>Industry:</strong> {lead.industry}<br />
-                <strong>Location:</strong> {lead.location}<br />
+                <strong>Title:</strong> {lead.title}
+                <br />
+                <strong>Company:</strong> {lead.company}
+                <br />
+                <strong>Industry:</strong> {lead.industry}
+                <br />
+                <strong>Location:</strong> {lead.location}
+                <br />
                 <strong>Email:</strong> {lead.email}
               </p>
             </div>
