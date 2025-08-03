@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Dropdowns from './Dropdowns';
 import logo from './assets/leadstrike-logo.png';
-import leadsSim from './leads_simulated.json';
+import leadsData from './leads_simulated.json'; // ✅ Direct import from /src
 
 export default function Dashboard() {
   const [filters, setFilters] = useState({
@@ -35,8 +35,8 @@ export default function Dashboard() {
   };
 
   const handleSimLoad = () => {
-    console.log('🎭 Simulated leads loaded:', leadsSim);
-    setLeads(leadsSim);
+    console.log('🎭 Simulated leads loaded:', leadsData);
+    setLeads(leadsData);
   };
 
   return (
