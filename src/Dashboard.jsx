@@ -36,7 +36,7 @@ export default function Dashboard() {
 
   const handleSimLoad = async () => {
     try {
-      const response = await fetch('http://localhost:8000/simulated-leads');
+      const response = await fetch('https://leadstrike-api.onrender.com/simulated-leads'); // PATCHED
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       console.log('🎭 Simulated leads loaded:', data);
