@@ -1,7 +1,6 @@
-// src/Dashboard.jsx
-
 import React, { useState } from 'react';
 import Dropdowns from './Dropdowns';
+import logo from './assets/leadstrike-logo.png';
 
 export default function Dashboard() {
   const [filters, setFilters] = useState({
@@ -36,7 +35,7 @@ export default function Dashboard() {
 
   const handleSimLoad = async () => {
     try {
-      const response = await fetch('https://leadstrike-api.onrender.com/simulated-leads'); // PATCHED
+      const response = await fetch('https://leadstrike-api.onrender.com/simulated-leads');
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       console.log('🎭 Simulated leads loaded:', data);
@@ -49,15 +48,19 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white px-6 py-10">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-8 mb-12">
+        <div className="flex items-center gap-10 mb-12">
           <div className="p-2 rounded-3xl bg-gradient-to-br from-[#0f172a] via-slate-800 to-[#1e293b] ring-1 ring-slate-700 shadow-lg">
             <img
-              src="/logo.png"
+              src={logo}
               alt="LeadStrike Logo"
-              className="h-36 w-36 object-contain rounded-2xl"
+              className="h-52 w-52 object-contain rounded-2xl"
             />
           </div>
-          <h1 className="text-5xl font-extrabold leading-tight">Get 5 leads. Geo-targeted. SIC-matched.</h1>
+          <h1 className="text-5xl font-extrabold leading-tight">
+            Get 5 leads. <br />
+            Geo-targeted. <br />
+            SIC-matched.
+          </h1>
         </div>
 
         <Dropdowns filters={filters} setFilters={setFilters} />
